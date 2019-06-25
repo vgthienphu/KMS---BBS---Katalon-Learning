@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WTC_UIB09-Verify Slider</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed3d7da8-c777-40d1-a032-0b28a3988c97</testCaseGuid>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description></description>
+      <id>aebfb60e-dc5a-4041-9bed-a6b0b44af99b</id>
+      <masked>false</masked>
+      <name>p_ExecutedBrowser</name>
+   </variable>
+</TestCaseEntity>

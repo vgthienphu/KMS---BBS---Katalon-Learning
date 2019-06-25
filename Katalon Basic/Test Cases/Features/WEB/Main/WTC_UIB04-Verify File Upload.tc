@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WTC_UIB04-Verify File Upload</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fba55546-2525-4233-85ab-eea882916b3f</testCaseGuid>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description></description>
+      <id>f115e6c9-fb0f-4520-8d89-fe12aa6900fb</id>
+      <masked>false</masked>
+      <name>p_ExecutedBrowser</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>34c906b2-8c5f-4bae-9ade-7251a66c2ad4</id>
+      <masked>false</masked>
+      <name>p_FileLocation</name>
+   </variable>
+</TestCaseEntity>

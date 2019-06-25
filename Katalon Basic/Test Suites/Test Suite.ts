@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Test Suite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>53b3a343-189c-4538-bd97-7b6093f2d357</testSuiteGuid>
+   <testCaseLink>
+      <guid>6bc86ed5-9f94-4c62-9495-0341d126f544</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB01-Verify Checkboxes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>af7c4264-cadc-4584-a339-6bef7b5c80a0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB02-Verify Drag and Drop</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e42474d7-ea71-4201-a914-93d87c877100</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB03-Verify Dropdown</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>728512ac-7bc5-4eb1-98ca-54b052c7101b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB04-Verify File Upload</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f115e6c9-fb0f-4520-8d89-fe12aa6900fb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>34c906b2-8c5f-4bae-9ade-7251a66c2ad4</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bb67def0-df58-4b85-b3a3-9aa7bbb14142</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB05-Verify Frames</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>21aea42e-935e-4366-bada-97277ed123f7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e1cbd018-0a19-46ff-9344-e91df02155cf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>743c8a04-a932-4b43-94e4-18d1cc300e22</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2e83c7e5-7d9c-49e6-919a-e8e01c68c71b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB06-Verify Alerts</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6d9d5bfa-42f8-4c4a-aefb-e95273d093eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB07-Verify Key Presses</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>23677975-ab29-413d-b2f2-fdcbe377b599</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b7fca255-92dc-46da-9611-f03ad59d18a3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>35667a99-bab7-4a17-a15d-3f252388dfe4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB08-Verify Color and Font</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c1bf78f5-424d-4e51-9270-c54649e38b57</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB09-Verify Slider</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aebfb60e-dc5a-4041-9bed-a6b0b44af99b</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c4071eeb-c4e5-43b9-80d9-6b9e6fde04c5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB10-Verify Menu</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1a5cd933-c402-4895-be79-1e90ac93d038</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>75b9518a-68b5-44e0-a6bb-dd0dc0209663</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>87f9149b-7788-476a-bda2-4334eeaa388b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d035e020-d156-41f2-9ed8-7231a78c512f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>90f1608f-076e-4bfd-82c4-a9ee2bd85b69</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB11-Verify Table</testCaseId>
+   </testCaseLink>
+</TestSuiteEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WTC_UIB05-Verify Frames</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb994f82-4ed9-4fb5-a22d-7713a4757cee</testCaseGuid>
+   <variable>
+      <defaultValue>'Hello, how are you?'</defaultValue>
+      <description></description>
+      <id>21aea42e-935e-4366-bada-97277ed123f7</id>
+      <masked>false</masked>
+      <name>p_NewContent</name>
+   </variable>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description></description>
+      <id>e1cbd018-0a19-46ff-9344-e91df02155cf</id>
+      <masked>false</masked>
+      <name>p_ExecutedBrowser</name>
+   </variable>
+   <variable>
+      <defaultValue>[:]</defaultValue>
+      <description></description>
+      <id>743c8a04-a932-4b43-94e4-18d1cc300e22</id>
+      <masked>false</masked>
+      <name>p_Data</name>
+   </variable>
+</TestCaseEntity>

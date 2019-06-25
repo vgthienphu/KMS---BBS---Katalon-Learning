@@ -1,0 +1,6 @@
+run_katalon_test_suite:
+      tags:
+        - shell
+      script:
+        - katalon -noSplash -runMode=console -projectPath="D:\BabySharks\Training\Katalon\Baby-Sharks-Katalon-Learning\Katalon Basic\Katalon Basic.prj" -retry=0
+          -testSuitePath="Test Suites\Test Suite" -executionProfile="default" -browserType="Chrome"
