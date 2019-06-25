@@ -1,0 +1,22 @@
+1. Convert a number month[1,2,..,12] to string month[Jan,Feb,...Dec] by switch case.
+2. The quadratic equation: ax^2 + bx + c = 0
+3. Parse substring in a string by start-substring and end-substring
+Example: 
+string = "Hello, what are you doing today?"
+start-substring = "wh"
+end-substring = "ng"
+output result => "at are you doi"
+4. Get Sort Order Status: normal; ascending; descending
++ listNumbers = [9, 18, 102, 1002] => ascending
++ listNumbers = [102, 18, 9, 1002] => normal
++ listNumbers = [1002, 102, 18, 9] => descending
++ listStrings = ["9", "18", "102", "1002"] => ascending
++ listStrings = ["1002", "102", "18", "9"] => descending
++ listStrings = ["1ab", "ab", "cd", "ya"] => ascending
+
+5 Optional : Get Sort Order Status for Date String(yyyy/MM/DD) ["2018/01/01", "2018/05/15", "2019/01/02"] => ascending
+
+6. Convert current system date to string
+convertDateToString('yyyy-MM-dd') => '2018-12-20'
+convertDateToString('yyyyddMM') => '20182012'
+convertDateToString('yyyy-MMM-dd') => '2018-Dec-20'

@@ -1,0 +1,21 @@
+1. Button:
+	//*[@id = 'content']//*[normalize-space()='${btnTxt}' and ./*[contains(@class, 'fa') or contains(@class, 'glyphicon')]] | //a[normalize-space()='${btnTxt}' and contains(@class, 'xcrud-search-toggle')]
+2. Menu:
+	//a[normalize-space() = '${mnuTxt}']/following-sibling::ul//li//a[normalize-space() = '${subMnuTxt}']
+3. Menu item:
+	//li[count(.//ul//li) = ${numberOfSubMnus}]//a[.//i]
+4. Number:
+	//*[contains(@class, 'serverHeader__stats')]//a[contains(text(), '${totalTxt}')]//b
+5. Icon:
+	//*[name()='svg']//*[name()='path' and @fill!='none' and ./following-sibling::*[name()='text' and contains(text(), '${iconLbl}')]]
+6. List Cells:	
+	//tr[.//td[count(//th[contains(text(), 'ID')]/preceding-sibling::th) + 1][text() > 3]]//td[count(//th[contains(text(), 'Ref No.')]/preceding-sibling::th) + 1]
+7. Checkbox:
+	//td[./following-sibling::td[.//span[text()='Paid']]]//input
+8. Icon on cell:
+	//tr[.//td[count(//th[contains(text(), 'Ref No.')]/preceding-sibling::th) + 1][text() = '8906']]//a[contains(@class, 'btn-danger')]
+9. Label on cell :
+	//td[count(//th[contains(text(), 'Paid')]/preceding-sibling::th) + 1][text() = '45.32']
+10. Link on Cell:
+	//table//td[.//a[text()='${hotelName}']]/following-sibling::td[count(.//i[contains(concat(' ', @class, ' '), ' fa-star ')]) = ${hotelStars}]
+
