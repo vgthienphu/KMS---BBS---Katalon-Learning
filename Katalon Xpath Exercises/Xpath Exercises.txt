@@ -1,21 +1,96 @@
-1. Button:
-	//*[@id = 'content']//*[normalize-space()='${btnTxt}' and ./*[contains(@class, 'fa') or contains(@class, 'glyphicon')]] | //a[normalize-space()='${btnTxt}' and contains(@class, 'xcrud-search-toggle')]
-2. Menu:
-	//a[normalize-space() = '${mnuTxt}']/following-sibling::ul//li//a[normalize-space() = '${subMnuTxt}']
-3. Menu item:
-	//li[count(.//ul//li) = ${numberOfSubMnus}]//a[.//i]
-4. Number:
-	//*[contains(@class, 'serverHeader__stats')]//a[contains(text(), '${totalTxt}')]//b
-5. Icon:
-	//*[name()='svg']//*[name()='path' and @fill!='none' and ./following-sibling::*[name()='text' and contains(text(), '${iconLbl}')]]
-6. List Cells:	
-	//tr[.//td[count(//th[contains(text(), 'ID')]/preceding-sibling::th) + 1][text() > 3]]//td[count(//th[contains(text(), 'Ref No.')]/preceding-sibling::th) + 1]
-7. Checkbox:
+URL: https://www.phptravels.net/admin-portal/admin
+Username/Password: admin@phptravels.com/demoadmin
+
+Xpath Basic:
+1. Checkbox:
+
 	//td[./following-sibling::td[.//span[text()='Paid']]]//input
-8. Icon on cell:
-	//tr[.//td[count(//th[contains(text(), 'Ref No.')]/preceding-sibling::th) + 1][text() = '8906']]//a[contains(@class, 'btn-danger')]
-9. Label on cell :
+
+2. Menu:
+
+	//a[normalize-space() = '${mnuTxt}']/following-sibling::ul//li//a[normalize-space() = '${subMnuTxt}']
+
+3. Button:
+
+	//*[@id = 'content']//*[normalize-space()='${btnTxt}' and ./*[contains(@class, 'fa') or contains(@class, 'glyphicon')]] | //a[normalize-space()='${btnTxt}' and contains(@class, 'xcrud-search-toggle')]
+
+4. Label:
+
+	//div[@class='panel-heading' and contains(text(), 'Booking Summary')]
+	//div[@class='panel-heading' and contains(text(), 'Recent Bookings')]
+
+5. Textbox:
+
+	//input[@name='email' and @required]
+	//input[@name='password' and @required]
+
+6. Link:
+
+	//a[contains(text(), 'Total Admins')]
+	//a[contains(text(), 'Total Suppliers')]
+
+7. Image:
+	
+	//img[@alt='adwords']
+	//img[@alt='analytics']
+
+8. Icon:
+
+	//*[name()='svg']//*[name()='path' and @fill!='none' and ./following-sibling::*[name()='text' and contains(text(), '${iconLbl}')]]
+
+9. Tab:
+
+	//a[contains(text(), 'Single Site') and @data-toggle='tab']
+	//a[contains(text(), 'Mobile') and @data-toggle='tab']
+
+10. Combobox:
+
+	URL: https://www.phptravels.net/admin-portal/admin/settings/
+
+	//label[contains(text(), 'Date Formate')]/following-sibling::div//select
+	//label[contains(text(), 'Multi Language')]/following-sibling::div//select
+
+11. Table:
 	//td[count(//th[contains(text(), 'Paid')]/preceding-sibling::th) + 1][text() = '45.32']
-10. Link on Cell:
 	//table//td[.//a[text()='${hotelName}']]/following-sibling::td[count(.//i[contains(concat(' ', @class, ' '), ' fa-star ')]) = ${hotelStars}]
 
+Xpath Advance:
+1. Button (Capture ‘Website’, ‘Delete Selected’, ‘Search’ and ‘Reset Chart’ button):
+
+	//*[@id = 'content']//*[normalize-space()='${btnTxt}' and ./*[contains(@class, 'fa') or contains(@class, 'glyphicon')]] | //a[normalize-space()='${btnTxt}' and contains(@class, 'xcrud-search-toggle')]
+
+2. Menu bar (Capture ‘HOTELS’ Main menu; ‘HOTELS’, ‘EXTRAS’, ‘REVIEW’ sub menu):
+
+	//a[normalize-space() = '${mnuTxt}']/following-sibling::ul//li//a[normalize-space() = '${subMnuTxt}']
+
+3. Menu item (Capture Main menu that has 6 menu items => ‘FLIGHTS’):
+
+	//li[count(.//ul//li) = ${numberOfSubMnus}]//a[.//i]
+
+4. Number (Capture ‘Total Admins’, ‘Total Customers‘, and ‘Total Bookings’ number):
+
+	//*[contains(@class, 'serverHeader__stats')]//a[contains(text(), '${totalTxt}')]//b
+
+5. Icon (Capture ‘Hotels’, ‘Flights’, ‘Tours’ and ‘Cars’ icon):
+
+	//*[name()='svg']//*[name()='path' and @fill!='none' and ./following-sibling::*[name()='text' and contains(text(), '${iconLbl}')]]
+
+6. List Cells (Capture list Cells ‘Ref No’ that ID number is greater than 3):
+
+	//tr[.//td[count(//th[contains(text(), 'ID')]/preceding-sibling::th) + 1][text() > 3]]//td[count(//th[contains(text(), 'Ref No.')]/preceding-sibling::th) + 1]
+
+7. Checkbox (Capture Checkbox Cell that Status is ‘PAID’):
+
+	//td[./following-sibling::td[.//span[text()='Paid']]]//input
+
+8. Icon on cell (Capture Delete icon on Cell that ‘Ref No’ is ‘8906’):
+
+	//tr[.//td[count(//th[contains(text(), 'Ref No.')]/preceding-sibling::th) + 1][text() = '8906']]//a[contains(@class, 'btn-danger')]
+
+9. Label on cell (Capture Label on ‘Paid’ column that Number is not 0):
+
+	//td[count(//th[contains(text(), 'Paid')]/preceding-sibling::th) + 1][text() = '45.32']
+
+10. Link on Cell (Select HOTELS/HOTELS menu bar, Capture 'Rendezvous Hotels' hotel is 2 Starts, Capture ‘Hyatt Regency Perth' hotel is 3 Start):
+
+	//table//td[.//a[text()='${hotelName}']]/following-sibling::td[count(.//i[contains(concat(' ', @class, ' '), ' fa-star ')]) = ${hotelStars}]
