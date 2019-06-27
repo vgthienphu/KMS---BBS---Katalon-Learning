@@ -5,12 +5,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
 import internal.GlobalVariable
 
-'Send requrest to log in to the system'
-def res = WS.callTestCase(findTestCase('Common/API/Log In'), [p_Username: GlobalVariable.ValidUsername, p_Password: GlobalVariable.ValidPassword], FailureHandling.STOP_ON_FAILURE)
+'Send request to log in to the system'
+def _Result = WS.callTestCase(findTestCase('Common/API/Log In'), [p_Username: GlobalVariable.ValidUsername, p_Password: GlobalVariable.ValidPassword], FailureHandling.STOP_ON_FAILURE)
 
 'Verify response status'
-WS.verifyResponseStatusCode(res.response, 200)
+WS.verifyResponseStatusCode(_Result.response, 200)
 
 'Verify token is not null'
-WS.verifyNotEqual(res.jsonBody.Token, null)
+WS.verifyNotEqual(_Result.jsonBody.Token, null)
 

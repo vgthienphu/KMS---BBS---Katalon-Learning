@@ -14,10 +14,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'Send request to add coffee'
-response = WS.sendRequest(findTestObject('API/Coffee/Add Coffee', [description: p_Description, name: p_Name]))
+_Response = WS.sendRequest(findTestObject('API/Coffee/Add Coffee', [description: p_Description, name: p_Name, baseUrl: GlobalVariable.BaseUrl]))
 
 'Parse response body to JSON'
-Map jsonBody = CustomKeywords.'Utils.parseResponeBodytoJSON'(response)
+Map _JsonBody = CustomKeywords.'Utils.parseResponeBodytoJSON'(_Response)
 
 'Return response and json response body'
-return [response: response, jsonBody: jsonBody]
+return [response: _Response, jsonBody: _JsonBody]

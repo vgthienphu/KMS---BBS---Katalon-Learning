@@ -13,11 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-_Response = WS.sendRequest(findTestObject('RESTful/Pet/Add a Pet'))
+'Send request to add a pet'
+_Response = WS.sendRequest(findTestObject('RESTful/Pet/Add a Pet', [baseUrl: GlobalVariable.PetBaseUrl]))
 
+'Verify status code'
 WS.verifyResponseStatusCode(_Response, 200)
 
+'Verify response pet id'
 WS.verifyElementPropertyValue(_Response, 'id', 2)
 
+'Verify response pet name'
 WS.verifyElementPropertyValue(_Response, 'name', 'name2')
 

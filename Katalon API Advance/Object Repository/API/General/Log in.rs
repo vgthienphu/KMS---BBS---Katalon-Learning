@@ -23,12 +23,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://webservice.toscacloud.com/rest/api/Auth_V2</restUrl>
+   <restUrl>${baseUrl}/Auth_V2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.BaseUrl</defaultValue>
+      <description></description>
+      <id>f7da3262-63e8-418c-a3db-117b2511abc3</id>
+      <masked>false</masked>
+      <name>baseUrl</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.ValidPassword</defaultValue>
+      <description></description>
+      <id>58d25bb5-44ec-4707-af12-22ede7c17ba4</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.ValidUsername</defaultValue>
+      <description></description>
+      <id>94a771a5-f25c-4cd7-9009-a449000cfc80</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

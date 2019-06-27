@@ -5,10 +5,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import internal.GlobalVariable
 
 'Send request to add employee'
-response = WS.sendRequest(findTestObject('API/Employee/Add Employee', [city: p_City, country: p_Country, street: p_Street, firstName: p_FirstName, lastName: p_LastName]))
+_Response = WS.sendRequest(findTestObject('API/Employee/Add Employee', [city: p_City, country: p_Country, street: p_Street, firstName: p_FirstName, lastName: p_LastName, baseUrl: GlobalVariable.BaseUrl]))
 
 'Parse response body to JSON'
-Map jsonBody = CustomKeywords.'Utils.parseResponeBodytoJSON'(response)
+Map _JsonBody = CustomKeywords.'Utils.parseResponeBodytoJSON'(_Response)
 
 'Return response and json response body'
-return [response: response, jsonBody: jsonBody]
+return [response: _Response, jsonBody: _JsonBody]

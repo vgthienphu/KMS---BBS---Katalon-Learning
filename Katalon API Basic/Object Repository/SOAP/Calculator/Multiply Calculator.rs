@@ -24,6 +24,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceFunction>Multiply</soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.CalculatorUrl</defaultValue>
+      <description></description>
+      <id>fdf25334-8bd7-4ebb-b9e4-7bf288f7473e</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -38,5 +45,5 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 </verificationScript>
-   <wsdlAddress>http://webservice.toscacloud.com/Soap11.svc?singleWsdl</wsdlAddress>
+   <wsdlAddress>${url}</wsdlAddress>
 </WebServiceRequestEntity>

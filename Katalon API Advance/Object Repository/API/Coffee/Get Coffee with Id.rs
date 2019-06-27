@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://webservice.toscacloud.com/rest/api/Coffees_V2/${id}</restUrl>
+   <restUrl>${baseUrl}/Coffees_V2/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,6 +31,13 @@
       <id>156d4ef2-766d-4186-aaff-b01787cb684a</id>
       <masked>false</masked>
       <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.BaseUrl</defaultValue>
+      <description></description>
+      <id>cb1d089f-ae66-44e7-b762-ee1f95c52fbb</id>
+      <masked>false</masked>
+      <name>baseUrl</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

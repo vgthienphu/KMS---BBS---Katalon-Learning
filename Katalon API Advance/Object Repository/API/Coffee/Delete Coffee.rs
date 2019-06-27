@@ -23,7 +23,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>http://webservice.toscacloud.com/rest/api/Coffees_V2/${id}</restUrl>
+   <restUrl>${baseUrl}/Coffees_V2/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,6 +35,13 @@
       <id>55bafeb5-cdb2-4142-83da-275a4fb6486f</id>
       <masked>false</masked>
       <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.BaseUrl</defaultValue>
+      <description></description>
+      <id>6716d6ff-99bd-4b8d-98d6-dc1acd2b276e</id>
+      <masked>false</masked>
+      <name>baseUrl</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

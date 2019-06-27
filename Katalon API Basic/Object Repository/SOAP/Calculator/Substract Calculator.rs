@@ -24,6 +24,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceFunction>Subtract</soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.CalculatorUrl</defaultValue>
+      <description></description>
+      <id>47d61bad-d980-44c0-9bd1-6e2bd396b0d8</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -38,5 +45,5 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 </verificationScript>
-   <wsdlAddress>http://webservice.toscacloud.com/Soap11.svc?singleWsdl</wsdlAddress>
+   <wsdlAddress>${url}</wsdlAddress>
 </WebServiceRequestEntity>

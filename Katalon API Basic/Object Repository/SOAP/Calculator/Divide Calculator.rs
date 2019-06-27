@@ -24,6 +24,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceFunction>Divide</soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.CalculatorUrl</defaultValue>
+      <description></description>
+      <id>e693b08a-08d6-4ed6-9da2-c765903c4312</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -38,5 +45,5 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 </verificationScript>
-   <wsdlAddress>http://webservice.toscacloud.com/Soap11.svc?singleWsdl</wsdlAddress>
+   <wsdlAddress>${url}</wsdlAddress>
 </WebServiceRequestEntity>

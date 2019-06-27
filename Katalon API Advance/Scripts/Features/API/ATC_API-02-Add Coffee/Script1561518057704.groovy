@@ -5,17 +5,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 'Send request to add coffee'
-def res = WS.callTestCase(findTestCase('Common/API/Add Coffee'), [('p_Description') : p_Description, ('p_Name') : p_Name], 
+def _Result = WS.callTestCase(findTestCase('Common/API/Add Coffee'), [('p_Description') : p_Description, ('p_Name') : p_Name], 
     FailureHandling.STOP_ON_FAILURE)
 
 'Verify status code'
-WS.verifyResponseStatusCode(res.response, 200)
+WS.verifyResponseStatusCode(_Result.response, 200)
 
 'Verify response Description and Name'
-CustomKeywords.'Utils.verifyResponsePropertiesValue'(res.response, [('Description') : p_Description, ('Name') : p_Name])
+CustomKeywords.'Utils.verifyResponsePropertiesValue'(_Result.response, [('Description') : p_Description, ('Name') : p_Name])
 
 'Set the created coffee Id to delete after test'
-p_IdToDelete = res.jsonBody.Id
+p_IdToDelete = _Result.jsonBody.Id
 
 @com.kms.katalon.core.annotation.SetUp
 def setUp() {

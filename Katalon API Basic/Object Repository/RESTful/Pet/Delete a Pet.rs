@@ -23,18 +23,25 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://petstore.swagger.io/v2/pet/${petId}</restUrl>
+   <restUrl>${baseUrl}/pet/${petId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>2</defaultValue>
+      <defaultValue>4</defaultValue>
       <description></description>
       <id>15cbfb3a-d201-4a66-bc10-0251d8a23e7f</id>
       <masked>false</masked>
       <name>petId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.PetBaseUrl</defaultValue>
+      <description></description>
+      <id>b1b4fa4c-3734-4b40-9e58-e0a5a02675df</id>
+      <masked>false</masked>
+      <name>baseUrl</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

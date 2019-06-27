@@ -23,18 +23,18 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://petstore.swagger.io/v2/pet/${petId}</restUrl>
+   <restUrl>${baseUrl}/pet/${petId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>2</defaultValue>
+      <defaultValue>GlobalVariable.PetBaseUrl</defaultValue>
       <description></description>
-      <id>0799a567-3d08-4b8e-967f-7fc1fd19b3b7</id>
+      <id>ab9c1fc9-7cda-4359-aee6-2e9118f89972</id>
       <masked>false</masked>
-      <name>petId</name>
+      <name>baseUrl</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -19,4 +19,9 @@
       <initValue>''</initValue>
       <name>Token</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://webservice.toscacloud.com/rest/api'</initValue>
+      <name>BaseUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -4,4 +4,14 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://petstore.swagger.io/v2'</initValue>
+      <name>PetBaseUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://webservice.toscacloud.com/Soap11.svc?singleWsdl'</initValue>
+      <name>CalculatorUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

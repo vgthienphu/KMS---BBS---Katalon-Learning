@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://webservice.toscacloud.com/rest/api/Employee_V2</restUrl>
+   <restUrl>${baseUrl}/Employee_V2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,6 +31,13 @@
       <id>84f707e2-fb16-4ca3-886c-ee43ae79b3b6</id>
       <masked>false</masked>
       <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.BaseUrl</defaultValue>
+      <description></description>
+      <id>20820900-2ef6-4e50-bbec-56ba9013e76a</id>
+      <masked>false</masked>
+      <name>baseUrl</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
