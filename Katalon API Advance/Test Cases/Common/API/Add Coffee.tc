@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Coffee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8f521bad-7256-4210-a4f2-73f0be828b1e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>19f9d27d-baac-48d8-9005-1157b3fdae60</id>
+      <masked>false</masked>
+      <name>p_Description</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>435d04a1-0a0a-47fe-8a5c-e9d2b5f3ef2e</id>
+      <masked>false</masked>
+      <name>p_Name</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_API-03-Get Coffee info with existing Id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d44fa9ce-5d90-4e98-bdc2-2ebeb241863f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>41be17d6-8da4-4ff9-8b14-8092cdfc6f0b</id>
+      <masked>false</masked>
+      <name>p_Id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5268c6ca-b13c-4b3e-94e4-8f3ee5349e98</id>
+      <masked>false</masked>
+      <name>p_ExpectedDescription</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>260d6190-4c2e-470f-bb00-314a4d64b408</id>
+      <masked>false</masked>
+      <name>p_ExpectedName</name>
+   </variable>
+</TestCaseEntity>

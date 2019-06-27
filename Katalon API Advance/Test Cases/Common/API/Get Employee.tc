@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>API_01-Log in</name>
+   <name>Get Employee</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9081b911-fe3c-46df-9f16-4d442bc64f8f</testCaseGuid>
+   <testCaseGuid>23eb3ef5-8d9c-4f0d-a00a-71a0dac58ef0</testCaseGuid>
 </TestCaseEntity>

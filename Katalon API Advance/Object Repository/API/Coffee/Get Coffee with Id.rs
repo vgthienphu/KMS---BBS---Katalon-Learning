@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Log in</name>
+   <name>Get Coffee with Id</name>
    <tag></tag>
-   <elementGuidId>6e17f343-e817-4624-b4cb-81a2993f740c</elementGuidId>
+   <elementGuidId>23b3c1cc-8478-492a-b2d5-fde824147e5a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;Password\&quot;: \&quot;Password1\&quot;,\n  \&quot;Username\&quot;: \&quot;Username1\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>Bearer ${token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://webservice.toscacloud.com/rest/api/Auth_V2</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>http://webservice.toscacloud.com/rest/api/Coffees_V2/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.Token</defaultValue>
+      <description></description>
+      <id>156d4ef2-766d-4186-aaff-b01787cb684a</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

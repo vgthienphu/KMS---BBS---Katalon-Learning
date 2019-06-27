@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_API-05-Get Coffee info with no existing Id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>81f30c8c-7d32-4894-a35f-2ac07d3f35f6</testCaseGuid>
+</TestCaseEntity>

@@ -13,3 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+'Send request to add coffee'
+response = WS.sendRequest(findTestObject('API/Coffee/Add Coffee', [description: p_Description, name: p_Name]))
+
+'Parse response body to JSON'
+Map jsonBody = CustomKeywords.'Utils.parseResponeBodytoJSON'(response)
+
+'Return response and json response body'
+return [response: response, jsonBody: jsonBody]

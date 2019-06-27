@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Delete Coffee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5d17103d-fc49-4ee5-b620-341687ae6a9e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3672ab9a-b820-4109-826e-5838ef78a599</id>
+      <masked>false</masked>
+      <name>p_Id</name>
+   </variable>
+</TestCaseEntity>

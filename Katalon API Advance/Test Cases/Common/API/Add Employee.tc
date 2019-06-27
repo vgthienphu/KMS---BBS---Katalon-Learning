@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Employee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6936ec13-ce67-4360-ab66-03e09419e3de</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b6310065-bae2-48ef-bbc8-d24ab3e74f23</id>
+      <masked>false</masked>
+      <name>p_City</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c02f44ad-82bc-4287-acc0-3f722b658569</id>
+      <masked>false</masked>
+      <name>p_Country</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8e84474e-9e74-4015-b08e-7ab244055fff</id>
+      <masked>false</masked>
+      <name>p_Street</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>07f70b3c-7e12-4558-804a-3d39d21623c7</id>
+      <masked>false</masked>
+      <name>p_FirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4517d6d2-3114-4b30-9eb4-91c9049cdf8f</id>
+      <masked>false</masked>
+      <name>p_LastName</name>
+   </variable>
+</TestCaseEntity>

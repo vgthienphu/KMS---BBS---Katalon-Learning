@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get Coffee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>171c1326-27de-4426-b6ef-da9c747a886e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>68ef85d8-3b9e-40d3-9a68-79f168021320</id>
+      <masked>false</masked>
+      <name>p_Id</name>
+   </variable>
+</TestCaseEntity>

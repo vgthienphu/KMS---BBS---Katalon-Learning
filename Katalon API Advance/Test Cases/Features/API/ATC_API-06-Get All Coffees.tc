@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_API-06-Get All Coffees</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>39f77bba-f2ee-467a-8827-75a03003ebd2</testCaseGuid>
+</TestCaseEntity>

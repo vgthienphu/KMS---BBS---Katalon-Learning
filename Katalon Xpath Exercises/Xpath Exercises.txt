@@ -89,7 +89,7 @@ Xpath Advance:
 
 9. Label on cell (Capture Label on ‘Paid’ column that Number is not 0):
 
-	//td[count(//th[contains(text(), 'Paid')]/preceding-sibling::th) + 1][text() = '45.32']
+	//td[count(//th[contains(text(), 'Paid')]/preceding-sibling::th) + 1][text() != '0']
 
 10. Link on Cell (Select HOTELS/HOTELS menu bar, Capture 'Rendezvous Hotels' hotel is 2 Starts, Capture ‘Hyatt Regency Perth' hotel is 3 Start):
 

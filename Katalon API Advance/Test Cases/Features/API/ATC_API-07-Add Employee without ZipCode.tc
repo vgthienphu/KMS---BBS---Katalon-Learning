@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_API-07-Add Employee without ZipCode</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e15a901a-088e-4c09-aefd-7d6deda242be</testCaseGuid>
+</TestCaseEntity>

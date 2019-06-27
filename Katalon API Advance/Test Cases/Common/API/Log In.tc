@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Log In</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b54a5b24-7cb7-458f-9e11-4c7744a5a9b8</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.ValidUsername</defaultValue>
+      <description></description>
+      <id>83b5470b-5702-417b-a7ff-d4ba32b50c28</id>
+      <masked>false</masked>
+      <name>p_Username</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.ValidPassword</defaultValue>
+      <description></description>
+      <id>b4223da1-bf42-43e6-963c-7be341f0fda7</id>
+      <masked>false</masked>
+      <name>p_Password</name>
+   </variable>
+</TestCaseEntity>

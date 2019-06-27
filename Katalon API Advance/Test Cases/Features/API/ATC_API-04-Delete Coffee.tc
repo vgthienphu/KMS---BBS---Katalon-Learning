@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_API-04-Delete Coffee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ffb94fb-b549-4436-bcc7-b692fd993aaf</testCaseGuid>
+   <variable>
+      <defaultValue>[:]</defaultValue>
+      <description></description>
+      <id>6fe99f21-7265-463a-883f-22169cda5346</id>
+      <masked>false</masked>
+      <name>p_CreatedCoffeeId</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_API-02-Add Coffee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bfac6b47-5b6f-4e6b-99d0-7c6f27aca083</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ffdba00f-9a03-4d25-ac0e-b034a5864cd8</id>
+      <masked>false</masked>
+      <name>p_Description</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aa4744d3-9c41-4027-b6d5-18d334b2d87d</id>
+      <masked>false</masked>
+      <name>p_Name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d1105dc4-10fe-4f0c-acad-9d94f6c2f0d6</id>
+      <masked>false</masked>
+      <name>p_IdToDelete</name>
+   </variable>
+</TestCaseEntity>
