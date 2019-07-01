@@ -16,14 +16,14 @@ TestObject _Result = findTestObject('Page_Key Presses/lbl_Result')
 
 'Enter keys and verify the result'
 for (String _Key : p_StringKeys) {
-    CustomKeywords.'utils.Utils.sendKeyWithKeyboard'(_Key)
+    CustomKeywords.'com.kms.web.Utilities.sendKeyWithKeyboard'(_Key)
 
     WebUI.verifyElementText(_Result, 'You entered: ' + _Key.toUpperCase())
 }
 
 'Enter keys and verify the result'
 for (Keys _Key : p_SpecialKeys) {
-    CustomKeywords.'utils.Utils.sendKeyWithKeyboard'(_Key)
+    CustomKeywords.'com.kms.web.Utilities.sendKeyWithKeyboard'(_Key)
 
     WebUI.verifyElementText(_Result, 'You entered: ' + _Key.name())
 }

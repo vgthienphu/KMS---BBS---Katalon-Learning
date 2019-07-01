@@ -3,6 +3,13 @@
    <description></description>
    <name>WTC_UIB11-Verify Table</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Click on 'Email' header column on Table 2</comment>
    <testCaseGuid>4f379d13-4a54-4669-848d-d09a65589f99</testCaseGuid>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description></description>
+      <id>65128f9d-4dcd-4ad2-aba1-a77cb7ab4742</id>
+      <masked>false</masked>
+      <name>p_ListEmailStr</name>
+   </variable>
 </TestCaseEntity>

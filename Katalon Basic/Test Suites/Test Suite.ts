@@ -37,13 +37,13 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>f115e6c9-fb0f-4520-8d89-fe12aa6900fb</variableId>
+         <variableId>34c906b2-8c5f-4bae-9ade-7251a66c2ad4</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>34c906b2-8c5f-4bae-9ade-7251a66c2ad4</variableId>
+         <variableId>5cc3401b-1b61-417e-a63d-276212d5aa28</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -147,5 +147,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Features/WEB/Main/WTC_UIB11-Verify Table</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>65128f9d-4dcd-4ad2-aba1-a77cb7ab4742</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -9,7 +9,7 @@ WebUI.callTestCase(findTestCase('Common/WEB/Go to page'), [('p_LinkText') : 'Dra
     FailureHandling.STOP_ON_FAILURE)
 
 'Drag and Drop column A to column B'
-CustomKeywords.'utils.DragDropHelper.dragDrop'('#column-a', '#column-b')
+CustomKeywords.'com.kms.web.Elements.dragDrop'('#column-a', '#column-b')
 
 'Verify column A changed to column B'
 WebUI.verifyElementText(findTestObject('Page_Drag and Drop/lbl_A'), 'B')

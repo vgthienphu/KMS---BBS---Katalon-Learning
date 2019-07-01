@@ -11,14 +11,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 WebUI.callTestCase(findTestCase('Common/WEB/Go to page'), [('p_LinkText') : 'File Upload', ('p_PageHeader') : 'File Uploader'], 
     FailureHandling.STOP_ON_FAILURE)
 
-'Check which browser the test is being run on'
-if (p_ExecutedBrowser == WebUIDriverType.IE_DRIVER) {
-    'Upload file on IE'
-    CustomKeywords.'utils.FileHandleHelper.uploadFileOnIE'(findTestObject('Page_File Upload/btn_Choose File'), p_FileLocation)
-} else {
-    'Upload file on Edge, Chrome or Firefox'
-    WebUI.uploadFile(findTestObject('Page_File Upload/btn_Choose File'), p_FileLocation)
-}
+'Upload file'
+WebUI.uploadFile(findTestObject('Page_File Upload/btn_Choose File'), p_FileLocation)
 
 'Click on \'Upload\' button'
 WebUI.click(findTestObject('Page_File Upload/btn_File Upload'))
@@ -35,6 +29,6 @@ def setUp() {
 	p_ExecutedBrowser = DriverFactory.getExecutedBrowser()
 
 	'Set file location'
-	p_FileLocation = RunConfiguration.getProjectDir().replace('/', '\\') + '\\Plugins\\Test Data Files\\Test Images\\image1.png'
+	p_FileLocation = RunConfiguration.getProjectDir().replace('/', '\\') + '\\Data Files\\Images\\image1.png'
 }
 

@@ -28,7 +28,7 @@ for (def _D : p_Data) {
 	'Set new content'
 	if ((p_ExecutedBrowser == WebUIDriverType.EDGE_DRIVER) || (p_ExecutedBrowser == WebUIDriverType.IE_DRIVER)) {
 		'Set new content on Edge or IE'
-		CustomKeywords.'utils.Utils.editContentByJS'(findTestObject('Page_WYSIWYG Editor/txt_Editor'), p_NewContent)
+		CustomKeywords.'com.kms.web.Elements.editContentByJS'(findTestObject('Page_WYSIWYG Editor/txt_Editor'), p_NewContent)
 	} else {
 		'Set new content on other browsers'
 		WebUI.sendKeys(findTestObject('Page_WYSIWYG Editor/txt_Editor'), p_NewContent)

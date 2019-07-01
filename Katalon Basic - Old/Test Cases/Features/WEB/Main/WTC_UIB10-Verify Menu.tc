@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WTC_UIB10-Verify Menu</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4d1ef4ee-14d0-4c0c-91e1-cb4d2c52215e</testCaseGuid>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description></description>
+      <id>1a5cd933-c402-4895-be79-1e90ac93d038</id>
+      <masked>false</masked>
+      <name>p_ExecutedBrowser</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>75b9518a-68b5-44e0-a6bb-dd0dc0209663</id>
+      <masked>false</masked>
+      <name>p_DownloadLocation</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>87f9149b-7788-476a-bda2-4334eeaa388b</id>
+      <masked>false</masked>
+      <name>p_FileName</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>d035e020-d156-41f2-9ed8-7231a78c512f</id>
+      <masked>false</masked>
+      <name>p_UseFireFoxProfile</name>
+   </variable>
+</TestCaseEntity>

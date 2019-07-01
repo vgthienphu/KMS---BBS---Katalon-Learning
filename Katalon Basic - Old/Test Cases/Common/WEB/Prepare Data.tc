@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Prepare Data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77f38d69-0212-4916-9767-2100509a5d84</testCaseGuid>
+   <variable>
+      <defaultValue>'Data Files/WEB/Main/Frame Content'</defaultValue>
+      <description></description>
+      <id>b045c512-489f-4415-b9d7-337642e76a14</id>
+      <masked>false</masked>
+      <name>p_DataFileName</name>
+   </variable>
+</TestCaseEntity>

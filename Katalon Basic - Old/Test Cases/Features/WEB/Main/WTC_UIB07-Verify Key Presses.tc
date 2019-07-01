@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WTC_UIB07-Verify Key Presses</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e67907d8-bf5d-4d23-89b7-1903d6d89bb1</testCaseGuid>
+   <variable>
+      <defaultValue>['g', 'a', 'b']</defaultValue>
+      <description></description>
+      <id>23677975-ab29-413d-b2f2-fdcbe377b599</id>
+      <masked>false</masked>
+      <name>p_StringKeys</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>b7fca255-92dc-46da-9611-f03ad59d18a3</id>
+      <masked>false</masked>
+      <name>p_SpecialKeys</name>
+   </variable>
+</TestCaseEntity>

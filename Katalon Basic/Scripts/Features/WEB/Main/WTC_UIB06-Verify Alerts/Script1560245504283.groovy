@@ -23,7 +23,7 @@ WebUI.verifyEqual(WebUI.getAlertText(), 'I am a JS Alert')
 WebUI.acceptAlert()
 
 'On Edge, wait before verifying result message'
-CustomKeywords.'utils.Utils.delayOn'(WebUIDriverType.EDGE_DRIVER, GlobalVariable.ShortTime)
+CustomKeywords.'com.kms.web.Elements.delayOn'(WebUIDriverType.EDGE_DRIVER, GlobalVariable.ShortTime)
 
 'Get result message web element'
 TestObject _Result = findTestObject('Page_JavaScript Alerts/lbl_Result')
@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Object Repository/Page_JavaScript Alerts/btn_JS Butt
 WebUI.dismissAlert()
 
 'On Edge, wait before verifying result message'
-CustomKeywords.'utils.Utils.delayOn'(WebUIDriverType.EDGE_DRIVER, GlobalVariable.ShortTime)
+CustomKeywords.'com.kms.web.Elements.delayOn'(WebUIDriverType.EDGE_DRIVER, GlobalVariable.ShortTime)
 
 'Verify the result message'
 WebUI.verifyElementText(_Result, 'You clicked: Cancel')
@@ -50,13 +50,13 @@ WebUI.click(findTestObject('Object Repository/Page_JavaScript Alerts/btn_JS Butt
 String _ExpectedText = 'Hello'
 
 'Set text to the alert'
-DriverFactory.getWebDriver().switchTo().alert().sendKeys(_ExpectedText)
+WebUI.setAlertText(_ExpectedText)
 
 'Click \'OK\' button to close Alert'
 WebUI.acceptAlert()
 
 'On Edge, wait before verifying result message'
-CustomKeywords.'utils.Utils.delayOn'(WebUIDriverType.EDGE_DRIVER, GlobalVariable.ShortTime)
+CustomKeywords.'com.kms.web.Elements.delayOn'(WebUIDriverType.EDGE_DRIVER, GlobalVariable.ShortTime)
 
 'Verify the result message'
 WebUI.verifyElementText(_Result, 'You entered: ' + _ExpectedText)

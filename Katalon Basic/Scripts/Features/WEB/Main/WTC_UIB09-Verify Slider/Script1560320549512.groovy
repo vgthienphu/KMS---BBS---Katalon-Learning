@@ -26,17 +26,17 @@ for (double _Value : _Values) {
 		double additionalPixels = _Value < 5 ? _Value + 6 : _Value + 10
 	
 		'Slide slider to each value on Edge'
-		CustomKeywords.'utils.SliderHelper.slideTo'(_Slider, _Value, additionalPixels)
+		CustomKeywords.'com.kms.web.Elements.slideTo'(_Slider, _Value, additionalPixels)
 	
 		'Delay a second'
 		WebUI.delay(GlobalVariable.ShortTime)
 	} else {
 		if (p_ExecutedBrowser == WebUIDriverType.IE_DRIVER) {
 			'Slide slider to each value on IE'
-			CustomKeywords.'utils.SliderHelper.slideToByPressingArrowKeys'(_Slider, _Value)
+			CustomKeywords.'com.kms.web.Elements.slideToByPressingArrowKeys'(_Slider, _Value)
 		} else {
 			'Slide slider to each value on other browsers'
-			CustomKeywords.'utils.SliderHelper.slideTo'(_Slider, _Value)
+			CustomKeywords.'com.kms.web.Elements.slideTo'(_Slider, _Value)
 		}
 	}
 }
