@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'kobiton-store:36044'</initValue>
+      <name>CalculatorAppKobiton</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>RunConfiguration.getProjectDir() + '\\Data Files\\Apps\\Calculator.apk'</initValue>
+      <name>CalculatorApp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>ShortTime</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

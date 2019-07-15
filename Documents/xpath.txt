@@ -1,0 +1,6 @@
+//tr[.//*[text()='The Peninsula Chicago']]//a[@title='DELETE']
+//*[text()='The Peninsula Chicago']/following::a[@title='DELETE'][1]
+(//td/span/a[@title='DELETE'])[1]
+//label[text()='Featured']/following::select[1]
+//td[count(i[@class='star fa fa-star']) = 4]
+

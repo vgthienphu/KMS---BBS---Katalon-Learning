@@ -1,0 +1,62 @@
+            
+			
+			public IList<IWebObject> OptionForConditionGroup(int index) => List<IWebObject>(ByCssSelector($".question-group:nth-child({index}) .form-row input"));
+			
+			TestStep("Select None from the group 1- Minor Damage", Pages.ConditionPage.OptionForConditionGroup(1)[0].ScrollAndClick);
+            TestStep("Select None from the group 2 - Major Damage", Pages.ConditionPage.OptionForConditionGroup(2)[0].ScrollAndClick);
+            TestStep("Select None from the group 3 - Mechanical Issues", Pages.ConditionPage.OptionForConditionGroup(3)[0].ScrollAndClick);
+			
+			
+			https://staging.kbb.com/?showroommock=c4
+			public IList<ShowroomPanel> ListPanel => ShowroomCarousel.List<ShowroomPanel>("List Panel", ByCssSelector(".content-panel"));
+			
+			IsTrue("Image should be displayed", Showroom.ListPanel[3].Image.IsDisplayed);
+            IsTrue("Assert first spec icon", Showroom.ListPanel[3].SpecIcons[0].IsDisplayed);
+            IsTrue("Assert second spec icon", Showroom.ListPanel[3].SpecIcons[1].IsDisplayed);
+			
+			
+/**
+	 * Click on the specific cell on the table
+	 * @param to: table object
+	 * @param rowIndex: row index start from 1
+	 * @param columnIndex: column index start from 1
+	 * @return
+	 */
+	@Keyword
+	def clickOnCell(TestObject to, Integer rowIndex, Integer columnIndex) {
+		if (rowIndex < 1) {
+			stepFailed("Row index is out bound")
+		}
+
+		WebElement table = WebUiBuiltInKeywords.findWebElement(to)
+
+		WebElement tableBody = null
+
+		try {
+			tableBody = table.findElement(By.xpath("tbody"))
+		} catch (Exception e) {}
+
+		List<WebElement> rows = (tableBody == null) ? table.findElements(By.xpath("tr")) : tableBody.findElements(By.xpath("tr"))
+
+		boolean rowFound = false
+		int rIndex = 1
+		for (WebElement row : rows) {
+			List columns = row.findElements(By.xpath("td"))
+			if (!columns.isEmpty()) {
+				if (rIndex < rowIndex) {
+					rIndex++
+				}
+				else if (rIndex == rowIndex) {
+					if ((columnIndex < 1) || (columnIndex > columns.size())) {
+						stepFailed("Column index is out bound")
+					}
+					((WebElement)columns.get(columnIndex - 1)).click()
+					rowFound = true
+					break
+				}
+			}
+		}
+		if(!rowFound){
+			stepFailed("Row index is out bound")
+		}
+	}	
